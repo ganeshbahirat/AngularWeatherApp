@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { CurrentWeatherComponent } from './current-weather/current-weather.component';
-import { ForecastWeatherComponent } from './forecast-weather/forecast-weather.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CurrentWeatherComponent } from './components/current-weather/current-weather.component';
+import { ForecastWeatherComponent } from './components/forecast-weather/forecast-weather.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
