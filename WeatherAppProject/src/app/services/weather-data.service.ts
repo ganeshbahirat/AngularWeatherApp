@@ -15,5 +15,4 @@ export class WeatherDataService {
     return this.http.get(AppSettings.API_ENDPOINT + "weather?zip=" + zipCode + ",us&APPID="+ AppSettings.APP_ID+"&units=imperial");
   }
 
-
 }
