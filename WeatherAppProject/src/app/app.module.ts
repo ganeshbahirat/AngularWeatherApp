@@ -7,6 +7,7 @@ import { CurrentWeatherComponent } from './components/current-weather/current-we
 import { ForecastWeatherComponent } from './components/forecast-weather/forecast-weather.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

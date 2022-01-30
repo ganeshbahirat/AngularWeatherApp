@@ -12,7 +12,10 @@ export class WeatherDataService {
   constructor(private http: HttpClient) { }
   
   GetCurrentWeatherDataByZip(zipCode : any): Observable<any>{
-    return this.http.get(AppSettings.API_ENDPOINT + "weather?zip=" + zipCode + ",us&APPID="+ AppSettings.APP_ID+"&units=imperial");
+    console.log("Zip >>>>> " + zipCode);
+    var urlStr = AppSettings.API_ENDPOINT + "weather?zip=" + zipCode + ",us&APPID="+ AppSettings.APP_ID+"&units=imperial";
+    console.log(">>>>> " + urlStr);
+    return this.http.get(urlStr);
   }
 
 }
